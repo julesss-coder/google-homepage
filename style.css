@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: black;
+    background-color: #ffffff;
+    width: 100%;
+}
+/* Google-Logo */
+div img#google { /*Wieso ist das Bild nicht zentriert?? Antwort: Die Navbar war im float und nicht
+    gecleart, jetzt funktioniert es.*/
+    display: block;
+    text-align: center;
+    margin: 8em auto 2em auto;
+}
+/* Das Suchfeld und die Buttons */
+form {
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+input[type="text"] {
+    font-size: 16px;
+    height: 44px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+}
+input[type="submit"] {
+    padding: 0 16px;
+    margin: 11px 4px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-size: 14px;
+    line-height: 27px;
+    height: 36px;
+    text-align: center;
+
+}
+/* Die obere Navbar */
+/* navbar versaut das Zentrieren des Logos! Wieso? 1. Float der nav in div nicht gecleart. --> 
+Ich cleare ihn. --> Es funktioniert!! */
+ul.navtop {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li.navtop {
+    display: inline; 
+}
+
+div.navigation {
+    float: right;
+    margin-top: 1em;
+    margin-right: 3em;
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
+div.navigation a { 
+    text-decoration: none;
+    color: black;
+    padding: .5em;
+    margin-top: 1em;
+}
+.no-wrap {
+    clear: both;
+}
+div.navigation a.anmelden {
+        color: white;
+        border: 1px solid #4285f4;
+        font-weight: bold;
+        outline: none;
+        background: #4285f4;
+        padding: .5em;
+        text-decoration: none;
+    }
+
+/* Footer */
+div#footer {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #e4e4e4;
+    background-color: #f2f2f2;
+    font-size: 14px;
+}
+div#footer p {
+    text-align: left;
+    margin-left: 30px;
+    color: #5f6368;
+}
+#footer-left {
+    float: left;
+    margin-left: 24px;
+    margin-right: 4em;
+    padding-top: 1em; 
+}
+#footer-right {
+    float: right;
+    height: 2em;
+    margin-right: 24px;
+    padding-top: 1em;   
+}
+#footer-left a, #footer-right a {
+    text-decoration: none;
+    color: #5f6368;
+    padding: .5em;
+}
